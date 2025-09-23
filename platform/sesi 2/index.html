@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Konversi Nilai</title>
+</head>
+<body>
+    <h2>Program Konversi Nilai</h2>
+
+    
+    <button onclick="konfersinilai()">Masukkan Nilai</button>
+
+    <script>
+        function konfersinilai() {
+            let nilai = prompt("Masukkan Nilai Anda");
+            nilai = parseInt(nilai);
+
+            if (nilai >= 85 && nilai <= 100) {
+                alert("Nilai Anda A");
+            } else if (nilai >= 70 && nilai <= 84) {
+                alert("Nilai Anda B");
+            } else if (nilai >= 55 && nilai <= 69) {
+                alert("Nilai Anda C");
+            } else if (nilai >= 40 && nilai <= 54) {
+                alert("Nilai Anda D");
+            } else if (nilai >= 0 && nilai < 40) {
+                alert("Nilai Anda E");
+            } else {
+                alert("Nilai Tidak Valid");
+            }
+
+            alert("Nilai Anda " + nilai);
+            console.log("Nilai Anda " + nilai);
+        }
+    </script>
+</body>
+</html>
