@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bilangan Ganjil</title>
+</head>
+<body>
+    <h2>Bilangan Ganjil dari 1 sampai 20</h2>
+
+    <h3>Menggunakan FOR:</h3>
+    <p id="forLoop"></p>
+
+    <h3>Menggunakan WHILE:</h3>
+    <p id="whileLoop"></p>
+
+    <script>
+        // --- Menggunakan FOR ---
+        let hasilFor = "";
+        for (let i = 1; i <= 20; i++) {
+            if (i % 2 !== 0) {
+                hasilFor += i + " ";
+            }
+        }
+        document.getElementById("forLoop").innerHTML = hasilFor;
+
+        // --- Menggunakan WHILE ---
+        let hasilWhile = "";
+        let j = 1;
+        while (j <= 20) {
+            if (j % 2 !== 0) {
+                hasilWhile += j + " ";
+            }
+            j++;
+        }
+        document.getElementById("whileLoop").innerHTML = hasilWhile;
+    </script>
+</body>
+</html>
