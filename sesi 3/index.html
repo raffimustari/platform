@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Mahasiswa</title>
+</head>
+<body>
+  <h2>Daftar Mahasiswa</h2>
+  <div id="output"></div>
+
+  <script>
+    let mahasiswa = ["Raffa", "Raffi", "Yuda", "Yudi", "Raffi1"];
+    let outputDiv = document.getElementById("output");
+    outputDiv.innerHTML += "<b>Daftar Mahasiswa Awal:</b><br>";
+    for (let i = 0; i < mahasiswa.length; i++) {
+      outputDiv.innerHTML += mahasiswa[i] + "<br>";
+    }
+
+    mahasiswa.push("Raffi!2");
+    mahasiswa.shift();
+
+    outputDiv.innerHTML += "<br><b>Daftar Mahasiswa Setelah Dimodifikasi:</b><br>";
+    for (let i = 0; i < mahasiswa.length; i++) {
+      outputDiv.innerHTML += mahasiswa[i] + "<br>";
+    }
+  </script>
+</body>
+</html>
